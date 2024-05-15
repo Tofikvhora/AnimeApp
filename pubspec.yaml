@@ -16,6 +16,21 @@ dependencies:
   cached_network_image: ^3.3.1
   flutter_hooks: ^0.20.1
   url_launcher: ^6.2.6
+  flutter_native_splash:
+
+flutter_native_splash:
+  web: false
+
+  color : '#ffffff'
+  image : Asset/Images/icons8-anime-480.png
+
+  android_12:
+    color : '#ffffff'
+    image : Asset/Images/icons8-anime-480.png
+    icon_background_color: "#ffffff"
+    image_dark: Asset/Images/icons8-anime-480.png
+    icon_background_color_dark: "#121212"
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -3,12 +3,16 @@ import 'package:anime/Provider/ApiProvider.dart';
 import 'package:anime/Provider/DarkAndLightProvider.dart';
 import 'package:anime/View/Splash_Page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 
 import 'Routes/RoutesOfApp.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Future.delayed(const Duration(milliseconds: 100));
+  FlutterNativeSplash.remove();
   runApp(const MyApp());
 }
 
